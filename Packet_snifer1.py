@@ -29,7 +29,7 @@ acknowledgement = tcp_hdr[3]
 doff_reserved = tcp_hdr[4]
 tcph_length = doff_reserved >> 4
 data = pkt[0][54:]
-if source_port == 443:
+if source_port == 80:
 	
 	print '[*]Source ip address: '+socket.inet_ntoa(ip_hdr[1])
 	print '[*]Destination ip address: '+socket.inet_ntoa(ip_hdr[2])
